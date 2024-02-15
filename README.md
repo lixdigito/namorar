@@ -1,10 +1,10 @@
-# React + Vite
+## Site com objetivo de fazer um pedido de namoro! ##
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Instalar dependências:
+**_npm i_**
 
-Currently, two official plugins are available:
+Rodar localmente:
+**_npm run dev_**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # quer-namorar-comigo
 # namorar
