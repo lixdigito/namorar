@@ -2,10 +2,12 @@ import Header from "../header"
 import { toast } from 'react-toastify';
 
 import './home.css'
+import { useState } from "react";
 
 
 export default function Home() {
-  const handleClickYes = () => 
+  const [showImage, setShowImage] = useState(false)
+  const handleClickYes = () => {
     toast.success('😍️ Status atualizado com sucesso!!! 😘️', {
       position: "top-center",
       autoClose: false,
@@ -16,6 +18,8 @@ export default function Home() {
       progress: undefined,
       theme: "colored",
     });
+    setShowImage(true)
+  }
   
   const handleClickNo = () => 
     toast.error('🤨️ Erro ao processar a resposta. Tente novamente! 😝️', {
@@ -36,6 +40,11 @@ export default function Home() {
     <diV>
       {!name ? null : <Header text={name}/>}
       <Header text="Namora comigo?"/>
+      {
+        showImage ? 
+        <div>
+          <img src="/src/assets/kiss-cat.gif" alt="gif de coracao" />
+        </div> :
       <div className="divButtons">
         <button className="buttonStyle" onClick={handleClickYes}>
           <i class="fa fa-heart" style={{fontSize: '48px', color: 'red'}}></i>
@@ -45,6 +54,7 @@ export default function Home() {
         <i class="fa fa-ban" aria-hidden="true" style={{fontSize: '48px', color: 'red'}}></i>
           não</button>
       </div>
+      }
     </diV>
   )
 }
