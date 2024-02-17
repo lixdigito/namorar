@@ -44,7 +44,7 @@ export default function Home() {
       {
         showImage ? 
         <div>
-          <img src={kissCat} alt="gif de coracao" />
+          <img src={kissCat} alt="gif de coracao" width="320" />
         </div> :
       <div className="divButtons">
         <button className="buttonStyle" onClick={handleClickYes}>
