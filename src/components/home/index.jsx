@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <diV>
       {!name ? null : <Header text={name}/>}
-      <Header text="Namora comigo?"/>
+      <Header text={showImage ? "Agora é real e oficial!" : "Namora comigo?"}/>
       {
         showImage ? 
         <div>
