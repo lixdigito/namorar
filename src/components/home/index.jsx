@@ -1,5 +1,6 @@
 import Header from "../header"
 import { toast } from 'react-toastify';
+import kissCat from '../../assets/kiss-cat.gif'
 
 import './home.css'
 import { useState } from "react";
@@ -43,7 +44,7 @@ export default function Home() {
       {
         showImage ? 
         <div>
-          <img src="/src/assets/kiss-cat.gif" alt="gif de coracao" />
+          <img src={kissCat} alt="gif de coracao" />
         </div> :
       <div className="divButtons">
         <button className="buttonStyle" onClick={handleClickYes}>
