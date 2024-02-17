@@ -17,7 +17,7 @@ export default function Home() {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "colored",
+      theme: "colored"
     });
     setShowImage(true)
   }
@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <diV>
       {!name ? null : <Header text={name}/>}
-      <Header text={showImage ? "Agora é real e oficial!" : "Namora comigo?"}/>
+      <Header text={showImage ? "agora é real e oficial!" : "namora comigo?"}/>
       {
         showImage ? 
         <div>
@@ -48,11 +48,11 @@ export default function Home() {
         </div> :
       <div className="divButtons">
         <button className="buttonStyle" onClick={handleClickYes}>
-          <i class="fa fa-heart" style={{fontSize: '48px', color: 'red'}}></i>
+          <i class="fa fa-heart" style={{fontSize: '48px', color: '#A60303'}}></i>
           Sim
         </button>
         <button className="buttonStyle" onClick={handleClickNo}>
-        <i class="fa fa-ban" aria-hidden="true" style={{fontSize: '48px', color: 'red'}}></i>
+        <i class="fa fa-ban" aria-hidden="true" style={{fontSize: '48px', color: '#A60303'}}></i>
           não</button>
       </div>
       }
