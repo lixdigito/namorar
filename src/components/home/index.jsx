@@ -17,7 +17,7 @@ export default function Home() {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "colored"
+      theme: "colored",
     });
     setShowImage(true)
   }
@@ -34,12 +34,11 @@ export default function Home() {
       theme: "colored",
     });
 
-  const queryParameters = new URLSearchParams(window.location.search)
-  const name = queryParameters.get("name")
+  const name = 'Uda,'
 
   return (
     <diV>
-      {!name ? null : <Header text={name}/>}
+      <Header text={name}/>
       <Header text={showImage ? "agora é real e oficial!" : "namora comigo?"}/>
       {
         showImage ? 
